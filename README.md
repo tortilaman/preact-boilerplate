@@ -81,7 +81,7 @@ npm run build
 > You can now deploy the contents of the `build` directory to production!
 >
 > **[Surge.sh](https://surge.sh) Example:** `surge ./build -d my-app.surge.sh`
-> 
+>
 > **[Netlify](https://www.netlify.com/docs/cli/) Example:** `netlify deploy`
 >
 > [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/developit/preact-boilerplate)
@@ -122,7 +122,7 @@ class Link extends Component {
 
 This project is set up to support [CSS Modules](https://github.com/css-modules/css-modules).  By default, styles in `src/style` are **global** (not using CSS Modules) to make global declarations, imports and helpers easy to declare.  Styles in `src/components` are loaded as CSS Modules via [Webpack's css-loader](https://github.com/webpack/css-loader#css-modules).  Modular CSS namespaces class names, and when imported into JavaScript returns a mapping of canonical (unmodified) CSS classes to their local (namespaced/suffixed) counterparts.
 
-When imported, this LESS/CSS:
+When imported, this SCSS/CSS:
 
 ```css
 .redText { color:red; }
