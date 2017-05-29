@@ -29,6 +29,7 @@ module.exports = {
 		],
 		alias: {
 			components: path.resolve(__dirname, "src/components"),    // used for tests
+			containers: path.resolve(__dirname, "src/containers"),		// used for tests
 			style: path.resolve(__dirname, "src/style"),
 			'react': 'preact-compat',
 			'react-dom': 'preact-compat'
@@ -51,7 +52,7 @@ module.exports = {
 			{
 				// Transform our own .(scss|sass|css) files with PostCSS and CSS-modules
 				test: /\.(scss|sass|css)$/,
-				include: [path.resolve(__dirname, 'src/components')],
+				include: [path.resolve(__dirname, 'src/components'), path.resolve(__dirname, 'src/containers')],
 				use: ExtractTextPlugin.extract({
 					fallback: 'style-loader',
 					use: [
